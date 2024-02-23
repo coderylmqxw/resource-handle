@@ -44,7 +44,7 @@ def handle_image(filename):
 
     # 获取原始图片
     try:
-        image = get_image("http://192.168.0.114:9000/image/"+filename)
+        image = get_image("http://127.0.0.1:9000/image/"+filename)
     except RuntimeError as e:
         return f"获取图片失败: {e}"
 
